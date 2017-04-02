@@ -7,6 +7,8 @@ a { color: inherit; text-decoration: none; }
 @import "typography";
 @import "mixins";
 
+body { background: $gray-dark; }
+
 // reusables
 @import "react-jsx";
 

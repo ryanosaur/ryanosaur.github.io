@@ -53,6 +53,9 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
   font-family: "Raleway", sans-serif, "Helvetica", "Arial", sans-serif;
   color: #122C34; }
 
+body {
+  background: #122C34; }
+
 .react-element {
   color: #E38E26; }
 
@@ -88,7 +91,6 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
   justify-content: space-between;
   height: 50px;
   width: 100%;
-  box-shadow: 0px 5px 5px #C3C3C3;
   border-bottom: 1px solid #C3C3C3;
   background: #FFFFFF;
   z-index: 9999; }
@@ -121,14 +123,16 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
 
 .home-page-wrap {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
 
 .home-header-section {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px;
-  margin: 0 20px; }
+  margin: 10px 20px;
+  background: #FFFFFF; }
 
 @media screen and (max-width: 479px) {
   .home-header-section {
