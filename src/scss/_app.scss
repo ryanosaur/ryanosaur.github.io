@@ -4,8 +4,12 @@
 // utils
 @import "variables";
 @import "typography";
+@import "mixins";
 
-// components
+// reusables
+@import "react-jsx";
+
+// component specific
 @import "page-wrapper";
 @import "header";
 @import "home";

@@ -36,9 +36,10 @@ ol, ul {
 
 blockquote, q {
   quotes: none; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
@@ -46,3 +47,40 @@ table {
 
 h1, h2, h3, h4, p, ul, li, a, label, input, span {
   font-family: "Raleway", sans-serif, "Helvetica", "Arial", sans-serif; }
+
+.react-element {
+  color: #E38E26; }
+
+.react-attr {
+  color: #B04413; }
+
+.react-attr:before {
+  content: ' '; }
+
+.react-value {
+  color: #E5BC7B; }
+
+.react-brackets {
+  color: #C3C3C3; }
+
+.sticky-header {
+  position: fixed;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 5px 5px #C3C3C3;
+  border-bottom: 1px solid #C3C3C3;
+  background: rgba(40, 171, 140, 0.1); }
+
+.brand-name-wrap {
+  margin-left: 10px; }
+
+@media screen and (max-width: 479px) {
+  .navigation-list {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%; } }

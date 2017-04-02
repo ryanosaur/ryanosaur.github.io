@@ -1,3 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+// typography
 $font: 'Raleway', sans-serif;
+
+// colors
+$blue: #103977;
+$teal: #28AB8C;
+$orange: #E38E26;
+$orange-dark: #B04413;
+$yellow: #E5BC7B;
+$gray: #C3C3C3;
+
+// screens
+$screen-sm: 480px; // phones
+$screen-md: 768px; // tablets
+$screen-lg: 992px; // desktop

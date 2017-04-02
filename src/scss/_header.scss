@@ -1,0 +1,26 @@
+.sticky-header {
+  position: fixed;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 5px 5px $gray;
+  border-bottom: 1px solid $gray;
+  background: transparentize($teal, .9);
+}
+
+.brand-name-wrap {
+  margin-left: 10px;
+}
+
+.navigation-list {
+  // move nav to footer on mobile
+  @include max-width($screen-sm) {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+  }
+}

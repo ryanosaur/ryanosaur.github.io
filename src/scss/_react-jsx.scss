@@ -1,0 +1,19 @@
+
+.react-element {
+  color: $orange;
+}
+
+.react-attr {
+  color: $orange-dark;
+  &:before {
+    content: ' ';
+  }
+}
+
+.react-value {
+  color: $yellow;
+}
+
+.react-brackets {
+  color: $gray;
+}
