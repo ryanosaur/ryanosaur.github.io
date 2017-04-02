@@ -9,3 +9,8 @@
     @content;
   }
 }
+
+@mixin unstyle-links {
+  color: inherit;
+  text-decoration: none;
+}

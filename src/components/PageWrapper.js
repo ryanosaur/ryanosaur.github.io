@@ -7,7 +7,9 @@ class PageWrapper extends React.Component {
     return (
       <div className="resume-app-wrap">
         <Header />
-        { this.props.children }
+        <div className="resume-pages-wrap">
+          { this.props.children }
+        </div>
       </div>
     );
   }

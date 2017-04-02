@@ -1,5 +1,6 @@
 .sticky-header {
   position: fixed;
+  top: 0;
   display: flex;
   display: flex;
   align-items: center;
@@ -15,12 +16,27 @@
   margin-left: 10px;
 }
 
-.navigation-list {
+.navigation-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+
   // move nav to footer on mobile
   @include max-width($screen-sm) {
     position: fixed;
     bottom: 0;
     height: 50px;
     width: 100%;
+    background: transparentize($teal, .9);
+    border-top: 1px solid $gray;
   }
+}
+
+.navigation-list-item-wrap {
+  @include unstyle-links;
+}
+
+.navigation-list-item {
+  color: $orange;
 }

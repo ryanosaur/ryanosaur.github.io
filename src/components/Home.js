@@ -4,7 +4,9 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div></div>
+      <div className="home-page-wrap">
+        Hello, world!
+      </div>
     );
   }
 

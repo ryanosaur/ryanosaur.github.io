@@ -45,8 +45,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 h1, h2, h3, h4, p, ul, li, a, label, input, span {
-  font-family: "Raleway", sans-serif, "Helvetica", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif, "Helvetica", "Arial", sans-serif;
+  color: #122C34; }
 
 .react-element {
   color: #E38E26; }
@@ -63,8 +68,16 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
 .react-brackets {
   color: #C3C3C3; }
 
+.resume-pages-wrap {
+  margin-top: 60px; }
+
+@media screen and (max-width: 479px) {
+  .resume-pages-wrap {
+    margin-bottom: 60px; } }
+
 .sticky-header {
   position: fixed;
+  top: 0;
   display: flex;
   display: flex;
   align-items: center;
@@ -78,9 +91,24 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
 .brand-name-wrap {
   margin-left: 10px; }
 
+.navigation-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px; }
+
 @media screen and (max-width: 479px) {
-  .navigation-list {
+  .navigation-list-wrap {
     position: fixed;
     bottom: 0;
     height: 50px;
-    width: 100%; } }
+    width: 100%;
+    background: rgba(40, 171, 140, 0.1);
+    border-top: 1px solid #C3C3C3; } }
+
+.navigation-list-item-wrap {
+  color: inherit;
+  text-decoration: none; }
+
+.navigation-list-item {
+  color: #E38E26; }

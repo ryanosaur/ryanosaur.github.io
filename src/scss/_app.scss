@@ -1,5 +1,6 @@
 // app defaults
 @import "node_modules/reset-css/_reset";
+a { color: inherit; text-decoration: none; }
 
 // utils
 @import "variables";
