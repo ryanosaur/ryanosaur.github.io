@@ -69,11 +69,15 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
   color: #C3C3C3; }
 
 .resume-pages-wrap {
-  margin-top: 60px; }
+  margin-top: 70px; }
 
 @media screen and (max-width: 479px) {
   .resume-pages-wrap {
     margin-bottom: 60px; } }
+
+@media screen and (min-width: 480px) {
+  .resume-pages-wrap {
+    margin: 60px 20% 0 20%; } }
 
 .sticky-header {
   position: fixed;
@@ -86,7 +90,8 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
   width: 100%;
   box-shadow: 0px 5px 5px #C3C3C3;
   border-bottom: 1px solid #C3C3C3;
-  background: rgba(40, 171, 140, 0.1); }
+  background: #FFFFFF;
+  z-index: 9999; }
 
 .brand-name-wrap {
   margin-left: 10px; }
@@ -103,8 +108,9 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background: rgba(40, 171, 140, 0.1);
-    border-top: 1px solid #C3C3C3; } }
+    background: #FFFFFF;
+    border-top: 1px solid #C3C3C3;
+    z-index: 9999; } }
 
 .navigation-list-item-wrap {
   color: inherit;
@@ -112,3 +118,57 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
 
 .navigation-list-item {
   color: #E38E26; }
+
+.home-page-wrap {
+  display: flex;
+  justify-content: center; }
+
+.home-header-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  margin: 0 20px; }
+
+@media screen and (max-width: 479px) {
+  .home-header-section {
+    flex-direction: column; } }
+
+.business-card-section {
+  border: 1px solid #DCDCDD; }
+
+@media screen and (max-width: 479px) {
+  .business-card-section {
+    height: 400px; } }
+
+@media screen and (min-width: 480px) {
+  .business-card-section {
+    width: 500px; } }
+
+@media screen and (min-width: 480px) {
+  .home-header-details-wrap {
+    margin-left: 20px; } }
+
+.home-header-img-wrap {
+  height: 210px;
+  width: 210px;
+  border-radius: 400px;
+  background-color: #FFFFFF;
+  border: 1px solid #DCDCDD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; }
+
+.home-header-detail-item {
+  margin-bottom: 10px; }
+
+.home-header-img {
+  width: 200px;
+  border-radius: 400px; }
+
+.home-header-name {
+  font-size: 20px; }
+
+.home-header-title {
+  font-size: 16px; }

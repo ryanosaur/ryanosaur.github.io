@@ -1,6 +1,9 @@
 .resume-pages-wrap {
-  margin-top: 60px;
+  margin-top: 70px;
   @include max-width($screen-sm) {
     margin-bottom: 60px;
+  }
+  @include min-width($screen-sm) {
+    margin: 60px 20% 0 20%;
   }
 }

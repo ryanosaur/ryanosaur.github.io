@@ -2,8 +2,12 @@
 
 // typography
 $font: 'Raleway', sans-serif;
+$h1: 20px;
+$h2: 18px;
+$h3: 16px;
 
 // colors
+$white: #FFFFFF;
 $blue: #103977;
 $teal: #28AB8C;
 $orange: #E38E26;
@@ -11,8 +15,12 @@ $orange-dark: #B04413;
 $yellow: #E5BC7B;
 $gray: #C3C3C3;
 $gray-dark: #122C34;
+$gray-light: #DCDCDD;
 
 // screens
 $screen-sm: 480px; // phones
 $screen-md: 768px; // tablets
 $screen-lg: 992px; // desktop
+
+// z's
+$z-top: 9999;

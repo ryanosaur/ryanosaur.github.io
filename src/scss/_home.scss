@@ -1,0 +1,61 @@
+.home-page-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.home-header-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  margin: 0 20px;
+  @include max-width($screen-sm) {
+    flex-direction: column;
+  }
+}
+
+.business-card-section {
+  border: 1px solid $gray-light;
+  // background: $gray-light;
+  @include max-width($screen-sm) {
+    height: 400px;
+  }
+  @include min-width($screen-sm) {
+    width: 500px;
+  }
+}
+
+.home-header-details-wrap {
+  @include min-width($screen-sm) {
+    margin-left: 20px;
+  }
+}
+
+.home-header-img-wrap {
+  height: 210px;
+  width: 210px;
+  border-radius: 400px;
+  background-color: $white;
+  border: 1px solid $gray-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.home-header-detail-item {
+  margin-bottom: 10px;
+}
+
+.home-header-img {
+  width: 200px;
+  border-radius: 400px;
+}
+
+.home-header-name {
+  font-size: $h1;
+}
+
+.home-header-title {
+  font-size: $h3;
+}
