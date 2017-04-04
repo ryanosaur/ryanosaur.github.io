@@ -142,16 +142,21 @@ body {
   padding: 20px;
   margin: 10px 20px;
   background: #FFFFFF;
-  border: 1px solid #DCDCDD; }
+  border: 1px solid #DCDCDD;
+  width: 280px;
+  transition: width .3s linear; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   .home-header-section {
-    flex-direction: column;
-    width: 280px; } }
+    flex-direction: column; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .home-header-section {
-    width: 500px; } }
+    width: 480px; } }
+
+@media screen and (min-width: 992px) {
+  .home-header-section {
+    width: 600px; } }
 
 @media screen and (max-width: 479px) {
   .business-card-section {
@@ -160,7 +165,7 @@ body {
 .home-header-details-wrap {
   margin: 20px; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   .home-header-details-wrap {
     text-align: center; } }
 

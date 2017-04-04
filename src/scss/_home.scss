@@ -12,12 +12,16 @@
   margin: 10px 20px;
   background: $white;
   border: 1px solid $gray-light;
-  @include max-width($screen-sm) {
+  width: 280px;
+  transition: width .3s linear;
+  @include max-width($screen-lg) {
     flex-direction: column;
-    width: 280px;
   }
-  @include min-width($screen-sm) {
-    width: 500px;
+  @include min-width($screen-md) {
+    width: 480px;
+  }
+  @include min-width($screen-lg) {
+    width: 600px;
   }
 }
 
@@ -29,7 +33,7 @@
 
 .home-header-details-wrap {
   margin: 20px;
-  @include max-width($screen-sm) {
+  @include max-width($screen-lg) {
     text-align: center;
   }
 }
