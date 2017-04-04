@@ -53,8 +53,14 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
   font-family: "Raleway", sans-serif, "Helvetica", "Arial", sans-serif;
   color: #122C34; }
 
-body {
-  background: #122C34; }
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 18px; }
 
 .react-element {
   color: #E38E26; }
@@ -70,6 +76,9 @@ body {
 
 .react-brackets {
   color: #C3C3C3; }
+
+body {
+  background: #122C34; }
 
 .resume-pages-wrap {
   margin-top: 70px; }
@@ -132,23 +141,21 @@ body {
   align-items: center;
   padding: 20px;
   margin: 10px 20px;
-  background: #FFFFFF; }
-
-@media screen and (max-width: 479px) {
-  .home-header-section {
-    flex-direction: column; } }
-
-.business-card-section {
+  background: #FFFFFF;
   border: 1px solid #DCDCDD; }
 
 @media screen and (max-width: 479px) {
-  .business-card-section {
-    height: 400px;
+  .home-header-section {
+    flex-direction: column;
     width: 280px; } }
 
 @media screen and (min-width: 480px) {
-  .business-card-section {
+  .home-header-section {
     width: 500px; } }
+
+@media screen and (max-width: 479px) {
+  .business-card-section {
+    height: 400px; } }
 
 .home-header-details-wrap {
   margin: 20px; }
@@ -174,12 +181,6 @@ body {
 .home-header-img {
   width: 200px;
   border-radius: 400px; }
-
-.home-header-name {
-  font-size: 20px; }
-
-.home-header-title {
-  font-size: 16px; }
 
 .fade-in-text {
   opacity: 0;

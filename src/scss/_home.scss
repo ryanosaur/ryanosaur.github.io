@@ -11,19 +11,19 @@
   padding: 20px;
   margin: 10px 20px;
   background: $white;
-  @include max-width($screen-sm) {
-    flex-direction: column;
-  }
-}
-
-.business-card-section {
   border: 1px solid $gray-light;
   @include max-width($screen-sm) {
-    height: 400px;
+    flex-direction: column;
     width: 280px;
   }
   @include min-width($screen-sm) {
     width: 500px;
+  }
+}
+
+.business-card-section {
+  @include max-width($screen-sm) {
+    height: 400px;
   }
 }
 
@@ -53,12 +53,4 @@
 .home-header-img {
   width: 200px;
   border-radius: 400px;
-}
-
-.home-header-name {
-  font-size: $h1;
-}
-
-.home-header-title {
-  font-size: $h3;
 }

@@ -25,7 +25,7 @@ class Home extends React.Component {
     let { locations, current } = this.state;
     return (
       <div className="home-page-wrap">
-        <section className="home-header-section business-card-section">
+        <section className="home-header-section">
           <h1 className="home-header-hello-banner">Hello, <FadeInText text={`${locations[current]}.`} /></h1>
         </section>
         <section className="home-header-section business-card-section">
@@ -39,7 +39,7 @@ class Home extends React.Component {
             <h3 className="home-header-detail-item home-header-telephone"><a href="tel:+14089148921">+1 (408) 914-8921</a></h3>
           </div>
         </section>
-        <section className="home-header-section business-card-section">
+        <section className="home-header-section">
           <h2 className="home-section-title">This is a title</h2>
           <p className="home-section-text">This is a paragraph.</p>
         </section>
