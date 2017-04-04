@@ -3,6 +3,7 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
  color: $gray-dark;
 }
 
-h1 { font-size: $h1 }
-h2 { font-size: $h2 }
-h3 { font-size: $h3 }
+h1 { font-size: $h1; }
+h2 { font-size: $h2; }
+h3 { font-size: $h3; }
+p { line-height: 1.2em; }

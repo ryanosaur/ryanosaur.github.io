@@ -1,3 +1,8 @@
 .clickable {
-  cursor: pointer;
+  @include clickable;
+}
+
+.external-link {
+  @include clickable;
+  color: $teal;
 }

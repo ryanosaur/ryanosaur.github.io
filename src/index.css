@@ -62,6 +62,9 @@ h2 {
 h3 {
   font-size: 18px; }
 
+p {
+  line-height: 1.2em; }
+
 .react-element {
   color: #E38E26; }
 
@@ -79,6 +82,10 @@ h3 {
 
 .clickable {
   cursor: pointer; }
+
+.external-link {
+  cursor: pointer;
+  color: #28AB8C; }
 
 body {
   background: #122C34; }
@@ -131,7 +138,7 @@ body {
   text-decoration: none; }
 
 .navigation-list-item {
-  color: #E38E26; }
+  color: #28AB8C; }
 
 .home-page-wrap {
   display: flex;
