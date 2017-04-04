@@ -1,10 +1,36 @@
 import React from 'react';
+import FadeInText from './FadeInText';
 
 class Home extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      locations: ['World', 'Canada', 'USA', 'Amsterdam'],
+      current: 0
+    };
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      let { current } = this.state;
+      if (current === 3) {
+        current = 0;
+      }
+      else {
+        current++;
+      }
+      this.setState({ current });
+    }, 2000);
+  }
+
   render() {
+    let { locations, current } = this.state;
     return (
       <div className="home-page-wrap">
+        <section className="home-header-section business-card-section">
+          <h1 className="home-header-hello-banner">Hello, <FadeInText text={locations[current]} />.</h1>
+        </section>
         <section className="home-header-section business-card-section">
           <div className="home-header-img-wrap">
             <img className="home-header-img" alt="ryanosaur's github profile img" src="https://avatars2.githubusercontent.com/u/5642293?s=400"></img>

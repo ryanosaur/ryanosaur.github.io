@@ -18,9 +18,9 @@
 
 .business-card-section {
   border: 1px solid $gray-light;
-  // background: $gray-light;
   @include max-width($screen-sm) {
     height: 400px;
+    width: 280px;
   }
   @include min-width($screen-sm) {
     width: 500px;
@@ -28,8 +28,9 @@
 }
 
 .home-header-details-wrap {
-  @include min-width($screen-sm) {
-    margin-left: 20px;
+  margin: 20px;
+  @include max-width($screen-sm) {
+    text-align: center;
   }
 }
 

@@ -1,0 +1,8 @@
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 0s;
+  &.fade {
+    opacity: 1;
+    transition: opacity .9s ease-in-out;
+  }
+}
