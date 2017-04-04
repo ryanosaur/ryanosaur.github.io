@@ -77,6 +77,9 @@ h3 {
 .react-brackets {
   color: #C3C3C3; }
 
+.clickable {
+  cursor: pointer; }
+
 body {
   background: #122C34; }
 
@@ -113,7 +116,7 @@ body {
   justify-content: space-around;
   width: 400px; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .navigation-list-wrap {
     position: fixed;
     bottom: 0;
@@ -137,18 +140,14 @@ body {
 
 .home-header-section {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 20px;
   margin: 10px 20px;
   background: #FFFFFF;
   border: 1px solid #DCDCDD;
   width: 280px;
   transition: width .3s linear; }
-
-@media screen and (max-width: 991px) {
-  .home-header-section {
-    flex-direction: column; } }
 
 @media screen and (min-width: 768px) {
   .home-header-section {
@@ -158,9 +157,17 @@ body {
   .home-header-section {
     width: 600px; } }
 
-@media screen and (max-width: 479px) {
+.business-card-section {
+  flex-direction: row;
+  align-items: center; }
+
+@media screen and (max-width: 991px) {
   .business-card-section {
-    height: 400px; } }
+    height: 400px;
+    flex-direction: column; } }
+
+.home-banner {
+  align-items: center; }
 
 .home-header-details-wrap {
   margin: 20px; }
@@ -186,6 +193,9 @@ body {
 .home-header-img {
   width: 200px;
   border-radius: 400px; }
+
+.home-section-content-wrap:not(:last-child) {
+  margin-bottom: 20px; }
 
 .fade-in-text {
   opacity: 0;

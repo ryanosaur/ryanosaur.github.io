@@ -9,6 +9,7 @@ a { color: inherit; text-decoration: none; }
 
 // reusables
 @import "react-jsx";
+@import "utils";
 
 // component specific
 @import "page-wrapper";

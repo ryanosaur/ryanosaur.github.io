@@ -6,17 +6,14 @@
 
 .home-header-section {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 20px;
   margin: 10px 20px;
   background: $white;
   border: 1px solid $gray-light;
   width: 280px;
   transition: width .3s linear;
-  @include max-width($screen-lg) {
-    flex-direction: column;
-  }
   @include min-width($screen-md) {
     width: 480px;
   }
@@ -26,9 +23,16 @@
 }
 
 .business-card-section {
-  @include max-width($screen-sm) {
+  flex-direction: row;
+  align-items: center;
+  @include max-width($screen-lg) {
     height: 400px;
+    flex-direction: column;
   }
+}
+
+.home-banner {
+  align-items: center;
 }
 
 .home-header-details-wrap {
@@ -57,4 +61,8 @@
 .home-header-img {
   width: 200px;
   border-radius: 400px;
+}
+
+.home-section-content-wrap:not(:last-child) {
+  margin-bottom: 20px;
 }

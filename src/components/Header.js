@@ -22,7 +22,7 @@ class Header extends React.Component {
         <div className="navigation-list-wrap">
           { ['about', 'projects', 'contact'].map(link => {
               return (
-                <Link key={`${link}-nav-item`} to={`/${link}`} className="navigation-list-item-wrap">
+                <Link key={`${link}-nav-item clickable`} to={`/${link}`} className="navigation-list-item-wrap">
                   <div className="navigation-list-item">{ link }</div>
                 </Link>
               );

@@ -23,12 +23,11 @@
   width: 400px;
 
   // move nav to footer on mobile
-  @include max-width($screen-sm) {
+  @include max-width($screen-md) {
     position: fixed;
     bottom: 0;
     height: 50px;
     width: 100%;
-    // background: transparentize($teal, .9);
     background: $white;
     border-top: 1px solid $gray;
     z-index: $z-top;
