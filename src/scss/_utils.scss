@@ -5,4 +5,7 @@
 .external-link {
   @include clickable;
   color: $teal;
+  &:hover {
+    border-bottom: 1px solid $teal;
+  }
 }

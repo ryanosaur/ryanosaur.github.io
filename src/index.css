@@ -87,6 +87,9 @@ p {
   cursor: pointer;
   color: #28AB8C; }
 
+.external-link:hover {
+  border-bottom: 1px solid #28AB8C; }
+
 body {
   background: #122C34; }
 
@@ -203,6 +206,9 @@ body {
 
 .home-section-content-wrap:not(:last-child) {
   margin-bottom: 20px; }
+
+.home-section-title {
+  color: #E38E26; }
 
 .fade-in-text {
   opacity: 0;

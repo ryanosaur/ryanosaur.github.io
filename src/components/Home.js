@@ -46,7 +46,7 @@ class Home extends React.Component {
           <div className="home-section-content-wrap">
             <p className="home-section-content">
               Oh boy, we're starting with existentialism? Well, first and foremost I'm a Newfoundlander. If you've never noticed it on a map,
-              it's the (not so little) island off the coast of Canada that resembles a foam finger people wear to sports games. There's about 500 000
+              it's the (not so little) island off the east coast of Canada that resembles a foam finger people wear to sports games. There's about 500 000
               of us in existence at any given time, so we're a pretty rare breed.
             </p>
           </div>
@@ -77,7 +77,41 @@ class Home extends React.Component {
             <h2 className="home-section-title">Who are you?</h2>
           </div>
           <div className="home-section-content-wrap">
-            <p className="home-section-text">This is a paragraph.</p>
+            <p className="home-section-content">
+              Hopefully, you are someone who would has a challenge in mind and would like to collaborate in some way.
+            </p>
+          </div>
+          <div className="home-section-content-wrap">
+            <p className="home-section-content">
+              Here's what technical skillsets I can offer you immediately, although I'm open to learning continuously.
+            </p>
+          </div>
+          <div className="home-section-content-wrap">
+            <p className="home-section-content">
+              Front-End Development:
+            </p>
+            <ul>
+              <li>React</li>
+              <li>Relay</li>
+              <li>SCSS</li>
+            </ul>
+          </div>
+          <div className="home-section-content-wrap">
+            <p className="home-section-content">
+              API Design:
+            </p>
+            <ul>
+              <li>GraphQL</li>
+              <li>REST</li>
+            </ul>
+          </div>
+        </section>
+        <section className="home-header-section">
+          <div className="home-section-content-wrap">
+            <p className="home-section-content">
+              &copy; 2017. All Rights Reserved, or whatever. Just <a className="external-link" href="mailto:ryan.justin.taylor@gmail.com">email</a> me if you
+              want to steal something of mine and I'll probably just give it to you.
+            </p>
           </div>
         </section>
       </div>
