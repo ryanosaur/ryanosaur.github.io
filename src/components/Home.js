@@ -6,21 +6,18 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locations: ['World', 'Canada', 'USA', 'Amsterdam'],
+      // NOTE: just random list of cities that came to mind.
+      locations: ['World', 'Newfoundland', 'New York City', 'Amsterdam', 'London', 'San Francisco', 'Barcelona', 'Los Angeles', 'Sydney'],
       current: 0
     };
   }
 
   componentDidMount() {
     setInterval(() => {
-      let { current } = this.state;
-      if (current === 3) {
-        current = 0;
-      }
-      else {
-        current++;
-      }
-      this.setState({ current });
+      let { current, locations } = this.state;
+      this.setState({
+        current: (current === locations.length - 1) ? 0 : current + 1
+      });
     }, 2000);
   }
 
@@ -29,7 +26,7 @@ class Home extends React.Component {
     return (
       <div className="home-page-wrap">
         <section className="home-header-section business-card-section">
-          <h1 className="home-header-hello-banner">Hello, <FadeInText text={locations[current]} />.</h1>
+          <h1 className="home-header-hello-banner">Hello, <FadeInText text={`${locations[current]}.`} /></h1>
         </section>
         <section className="home-header-section business-card-section">
           <div className="home-header-img-wrap">
