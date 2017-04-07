@@ -1,0 +1,28 @@
+.icon-component {
+  height: 30px;
+  width: 30px;
+  transition: all .1s ease-in-out;
+  &:hover {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.icon-linkedin {
+  fill: #0077B5;
+}
+
+.icon-github {
+  fill: #24292E;
+}
+
+.icon-instagram {
+  padding: 4px;
+  border-radius: 10px;
+  fill: $white;
+  background: linear-gradient(135deg, #ffd521,#f50000,#b900b4,#1400c8);
+}
+
+.icon-twitter {
+  fill: #1DA1F2;
+}

@@ -39,5 +39,7 @@
 }
 
 .navigation-list-item {
-  color: $teal;
+  width: 60px;
+  display: flex;
+  justify-content: center;
 }

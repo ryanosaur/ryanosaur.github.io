@@ -141,7 +141,9 @@ body {
   text-decoration: none; }
 
 .navigation-list-item {
-  color: #28AB8C; }
+  width: 60px;
+  display: flex;
+  justify-content: center; }
 
 .home-page-wrap {
   display: flex;
@@ -217,3 +219,27 @@ body {
 .fade-in-text.fade {
   opacity: 1;
   transition: opacity .9s ease-in-out; }
+
+.icon-component {
+  height: 30px;
+  width: 30px;
+  transition: all .1s ease-in-out; }
+
+.icon-component:hover {
+  height: 35px;
+  width: 35px; }
+
+.icon-linkedin {
+  fill: #0077B5; }
+
+.icon-github {
+  fill: #24292E; }
+
+.icon-instagram {
+  padding: 4px;
+  border-radius: 10px;
+  fill: #FFFFFF;
+  background: linear-gradient(135deg, #ffd521, #f50000, #b900b4, #1400c8); }
+
+.icon-twitter {
+  fill: #1DA1F2; }

@@ -1,7 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
+import IconSocial from './IconSocial';
 
 class Header extends React.Component {
+
+  getUriFor(type) {
+    let socialLinks = {
+      linkedin: 'https://www.linkedin.com/in/ryanomite/',
+      github: 'https://github.com/ryanosaur',
+      instagram: 'https://www.instagram.com/ryanorite/',
+      twitter: 'https://twitter.com/ryanotopia',
+    }
+    return socialLinks[type] || null;
+  }
 
   render() {
     return (
@@ -20,11 +31,11 @@ class Header extends React.Component {
           </div>
         </Link>
         <div className="navigation-list-wrap">
-          { ['about', 'projects', 'contact'].map(link => {
+          { ['linkedin', 'github', 'instagram', 'twitter'].map(link => {
               return (
-                <Link key={`${link}-nav-item clickable`} to={`/${link}`} className="navigation-list-item-wrap">
-                  <div className="navigation-list-item">{ link }</div>
-                </Link>
+                <a href={this.getUriFor(link)} target="_blank" key={link} className="navigation-list-item clickable">
+                  <IconSocial type={link} />
+                </a>
               );
             })
           }
