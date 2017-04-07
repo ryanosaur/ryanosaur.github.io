@@ -36,10 +36,9 @@ ol, ul {
 
 blockquote, q {
   quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
 
 table {
   border-collapse: collapse;
@@ -70,9 +69,8 @@ p, li {
 
 .react-attr {
   color: #B04413; }
-
-.react-attr:before {
-  content: ' '; }
+  .react-attr:before {
+    content: ' '; }
 
 .react-value {
   color: #E5BC7B; }
@@ -86,23 +84,20 @@ p, li {
 .external-link {
   cursor: pointer;
   color: #28AB8C; }
-
-.external-link:hover {
-  border-bottom: 1px solid #28AB8C; }
+  .external-link:hover {
+    border-bottom: 1px solid #28AB8C; }
 
 body {
   background: #122C34; }
 
 .resume-pages-wrap {
   margin-top: 70px; }
-
-@media screen and (max-width: 479px) {
-  .resume-pages-wrap {
-    margin-bottom: 60px; } }
-
-@media screen and (min-width: 480px) {
-  .resume-pages-wrap {
-    margin: 60px 20% 0 20%; } }
+  @media screen and (max-width: 479px) {
+    .resume-pages-wrap {
+      margin-bottom: 60px; } }
+  @media screen and (min-width: 480px) {
+    .resume-pages-wrap {
+      margin: 60px 20% 0 20%; } }
 
 .sticky-header {
   position: fixed;
@@ -125,16 +120,15 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 400px; }
-
-@media screen and (max-width: 767px) {
-  .navigation-list-wrap {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background: #FFFFFF;
-    border-top: 1px solid #C3C3C3;
-    z-index: 9999; } }
+  @media screen and (max-width: 767px) {
+    .navigation-list-wrap {
+      position: fixed;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      background: #FFFFFF;
+      border-top: 1px solid #C3C3C3;
+      z-index: 9999; } }
 
 .navigation-list-item-wrap {
   color: inherit;
@@ -160,33 +154,29 @@ body {
   border: 1px solid #DCDCDD;
   width: 280px;
   transition: width .3s linear; }
-
-@media screen and (min-width: 768px) {
-  .home-header-section {
-    width: 480px; } }
-
-@media screen and (min-width: 992px) {
-  .home-header-section {
-    width: 600px; } }
+  @media screen and (min-width: 768px) {
+    .home-header-section {
+      width: 480px; } }
+  @media screen and (min-width: 992px) {
+    .home-header-section {
+      width: 600px; } }
 
 .business-card-section {
   flex-direction: row;
   align-items: center; }
-
-@media screen and (max-width: 991px) {
-  .business-card-section {
-    height: 400px;
-    flex-direction: column; } }
+  @media screen and (max-width: 991px) {
+    .business-card-section {
+      height: 400px;
+      flex-direction: column; } }
 
 .home-banner {
   align-items: center; }
 
 .home-header-details-wrap {
   margin: 20px; }
-
-@media screen and (max-width: 991px) {
-  .home-header-details-wrap {
-    text-align: center; } }
+  @media screen and (max-width: 991px) {
+    .home-header-details-wrap {
+      text-align: center; } }
 
 .home-header-img-wrap {
   height: 210px;
@@ -219,19 +209,17 @@ body {
 .fade-in-text {
   opacity: 0;
   transition: opacity 0s; }
-
-.fade-in-text.fade {
-  opacity: 1;
-  transition: opacity .9s ease-in-out; }
+  .fade-in-text.fade {
+    opacity: 1;
+    transition: opacity .9s ease-in-out; }
 
 .icon-component {
   height: 30px;
   width: 30px;
   transition: all .1s ease-in-out; }
-
-.icon-component:hover {
-  height: 35px;
-  width: 35px; }
+  .icon-component:hover {
+    height: 35px;
+    width: 35px; }
 
 .icon-linkedin {
   fill: #0077B5; }
