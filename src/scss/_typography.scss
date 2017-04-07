@@ -6,4 +6,4 @@ h1, h2, h3, h4, p, ul, li, a, label, input, span {
 h1 { font-size: $h1; }
 h2 { font-size: $h2; }
 h3 { font-size: $h3; }
-p { line-height: 1.2em; }
+p, li { line-height: 1.2em; }

@@ -62,7 +62,7 @@ h2 {
 h3 {
   font-size: 18px; }
 
-p {
+p, li {
   line-height: 1.2em; }
 
 .react-element {
@@ -211,6 +211,10 @@ body {
 
 .home-section-title {
   color: #E38E26; }
+
+.skills-list {
+  list-style: disc;
+  padding-left: 20px; }
 
 .fade-in-text {
   opacity: 0;

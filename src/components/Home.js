@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeInText from './FadeInText';
+import ExternalLink from './ExternalLink';
 
 class Home extends React.Component {
 
@@ -35,8 +36,8 @@ class Home extends React.Component {
           <div className="home-header-details-wrap">
             <h1 className="home-header-detail-item home-header-name">Ryan Taylor</h1>
             <h3 className="home-header-detail-item home-header-title">Software Developer</h3>
-            <h3 className="home-header-detail-item home-header-email"><a className="external-link" href="mailto:ryan.justin.taylor@gmail.com">ryan.justin.taylor@gmail.com</a></h3>
-            <h3 className="home-header-detail-item home-header-telephone"><a className="external-link" href="tel:+14089148921">+1 (408) 914-8921</a></h3>
+            <h3 className="home-header-detail-item home-header-email"><ExternalLink href="mailto:ryan.justin.taylor@gmail.com">ryan.justin.taylor@gmail.com</ExternalLink></h3>
+            <h3 className="home-header-detail-item home-header-telephone"><ExternalLink href="tel:+14089148921">+1 (408) 914-8921</ExternalLink></h3>
           </div>
         </section>
         <section className="home-header-section">
@@ -53,8 +54,8 @@ class Home extends React.Component {
           <div className="home-section-content-wrap">
             <p className="home-section-content">
               More relevently, I'm a data driven software developer -- with a love for VIM. After college, I started working at startup in Newfoundland
-              called <a href="https://verafin.com/" className="external-link" target="_blank">Verafin</a> doing first integrations between their software and core banking systems
-              in the United States and Canada, and later between their software and <a href="https://www.salesforce.com/" className="external-link" target="_blank">Salesforce.com</a>.
+              called <ExternalLink href="https://verafin.com/">Verafin</ExternalLink> doing first integrations between their software and core banking systems
+              in the United States and Canada, and later between their software and <ExternalLink href="https://www.salesforce.com/">Salesforce.com</ExternalLink>.
             </p>
           </div>
           <div className="home-section-content-wrap">
@@ -66,7 +67,7 @@ class Home extends React.Component {
           </div>
           <div className="home-section-content-wrap">
             <p className="home-section-content">
-              While in California job searching, I was approached by <a href="http://canvs.tv/" className="external-link" target="_blank">Canvs</a>. Canvs has given me the opportunity
+              While in California job searching, I was approached by <ExternalLink href="http://canvs.tv/">Canvs</ExternalLink>. Canvs has given me the opportunity
               to move to New York City and lead a team of developers to creating their new front-end application in whatever libraries and architecture I chose.
               For that, I will be forever grateful.
             </p>
@@ -90,26 +91,41 @@ class Home extends React.Component {
             <p className="home-section-content">
               Front-End Development:
             </p>
-            <ul>
-              <li>React</li>
-              <li>Relay</li>
-              <li>SCSS</li>
+            <ul className="skills-list">
+              <li className="skills-list-item"><ExternalLink href="https://github.com/facebook/react">React</ExternalLink></li>
+              <li className="skills-list-item"><ExternalLink href="https://github.com/facebook/relay">Relay</ExternalLink></li>
+              <li className="skills-list-item"><ExternalLink href="http://sass-lang.com/">SCSS</ExternalLink></li>
             </ul>
           </div>
           <div className="home-section-content-wrap">
             <p className="home-section-content">
               API Design:
             </p>
-            <ul>
-              <li>GraphQL</li>
-              <li>REST</li>
+            <ul className="skills-list">
+              <li className="skills-list-item"><ExternalLink href="https://github.com/facebook/graphql">GraphQL</ExternalLink></li>
+              <li className="skills-list-item">REST</li>
             </ul>
           </div>
         </section>
         <section className="home-header-section">
           <div className="home-section-content-wrap">
+            <h2 className="home-section-title">Projects</h2>
+          </div>
+          <div className="home-section-content-wrap">
             <p className="home-section-content">
-              &copy; 2017. All Rights Reserved, or whatever. Just <a className="external-link" href="mailto:ryan.justin.taylor@gmail.com">email</a> me if you
+              I'll be adding to this list as time goes on, so check back every now and then and see what's new.
+            </p>
+          </div>
+          <div className="home-section-content-wrap">
+            <p className="home-section-content">
+              This very simple site is built in <ExternalLink href="https://github.com/facebook/react">React</ExternalLink>, check out the source <ExternalLink href="https://github.com/ryanosaur/ryanosaur.github.io">here.</ExternalLink>.
+            </p>
+          </div>
+        </section>
+        <section className="home-header-section">
+          <div className="home-section-content-wrap">
+            <p className="home-section-content">
+              &copy; 2017. All Rights Reserved, or whatever. Just <ExternalLink href="mailto:ryan.justin.taylor@gmail.com">email</ExternalLink> me if you
               want to steal something of mine and I'll probably just give it to you.
             </p>
           </div>
